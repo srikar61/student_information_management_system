@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>student details</title>
+   <style>
+     body{background-color:lightblue;}
+     a:link{
+   color:coral;
+text-decoration:none;
+   }
+a:unvisited{
+  color:coral;
+}
+a:visited{
+  color:coral;
+}
+a:hover{
+color:red;
+   }
+.button {
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 17px;
+  margin: 4px 2px;
+  cursor: pointer;
+  float:right;
+  border-radius: 4px;
+  
+}
+
+ body{
+ 
+ background-size:cover;
+ }
+
+   </style>
+  </head>
+  <body>
+<form method="POST" action="rfromtable.py">
+<h1 align=center style="color:dodgerblue;"><b>STUDENT DETAILS</b></H1>
+<button class="button"><a href='home1.html' onclick="myfunction(event,'Home')">Home</a></button>
+
+<button class="button"><a href="about1.html">About</a></button>
+
+<button class="button"><a href="registration1.html">
+Student Register</a></button>
+
+
+
+      <div style"padding-top:"90px";border-top:80px;background-color:"dodgerblue";margin:"10px";border:"10px";><br>
+      <br><br><br><div align="center"><label >Student Rollno</label>
+      <input type"text" name="studentrollno"><br><br>
+      <input type="submit" name="submit" align="center">
+      </div>
+</div>
+</form>
+<script>
+  function myfunction(event, action) {
+      event.preventDefault(); // Prevent the default behavior of the anchor tag
+      var result = window.confirm("Are you sure you want to " + action + "?");
+      if (result) {
+        // Perform the action
+        if (action === "Home") {
+          window.location.href = "home.html";
+        }
+      }
+    }
+</script>
+  </body>
+</html>
