@@ -62,11 +62,11 @@ color:red;
   <body>
 <form method="POST" action="rfromtable.py">
 <h1 align=center style="color:dodgerblue;"><b>STUDENT DETAILS</b></H1>
-<button class="button button1"><a href='home1.html' onclick="confirmAction(event,'Home')">Home</a></button>
+<button class="button button1"><a href='home.html' onclick="confirmAction(event,'Home')">Home</a></button>
 
-<button class="button button2"><a href="about1.html">About</a></button>
+<button class="button button2"><a href="about.html">About</a></button>
 
-<button class="button button1"><a href="registration1.html">
+<button class="button button1"><a href="registration.html">
 Student Register</a></button>
 
 
@@ -87,7 +87,7 @@ Student Register</a></button>
         // Perform the action
         
 	if (action === "Home") {
-          window.location.href = "home1.html";
+          window.location.href = "home.html";
         }
       }
     }
@@ -140,14 +140,14 @@ color:red;
 </head>
 <body>
 <h1 align=center style="color:dodgerblue;"><b>ADMIN PAGE</b></H1>
-<button class="button button1"><a href='home1.html' onclick="confirmAction(event,'Home')">Home</a></button>
+<button class="button button1"><a href='home.html' onclick="confirmAction(event,'Home')">Home</a></button>
 
-<button class="button button2"><a href="about1.html">About</a></button>
+<button class="button button2"><a href="about.html">About</a></button>
 
-<button class="button button1"><a href="studetails1.html">
+<button class="button button1"><a href="studetails.html">
 Student details</a></button>
 
-<button class="button button1"><a href="home1.html" onclick="confirmAction(event,'Logout')">
+<button class="button button1"><a href="home.html" onclick="confirmAction(event,'Logout')">
 Logout</a></button>
 
 
@@ -290,10 +290,10 @@ print('''
         // Perform the action
         
 	if (action === "Home") {
-          window.location.href = "home1.html";
+          window.location.href = "home.html";
         }
 	if (action==="Logout"){
-	window.location.href="home1.html";
+	window.location.href="home.html";
 }
       }
     }
