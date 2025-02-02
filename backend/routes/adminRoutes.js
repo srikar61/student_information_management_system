@@ -2,7 +2,7 @@ const express = require('express');
 const Admin = require('../models/Admin');
 
 
-const router = express.Router();
+const router = express.Router();//
 
 // Admin Signup
 router.post('/signup', async (req, res) => {
